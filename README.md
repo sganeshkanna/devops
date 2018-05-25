@@ -8,5 +8,6 @@ Run >>python drawable_resizer.py ic_logo.png
 This create drawable-xxxhdpi,drawable-xxhdpi,drawable-xhdpi,drawable-hdpi images and add it to respective folders
 
 Note:Required to install Python Image Library
+
 pip install pillow
 
