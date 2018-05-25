@@ -30,13 +30,14 @@ def process():
 	resize(0.50,img,filePath.format(xhdpi,fileName))
 	createFolder(hdpi)
 	resize(0.37,img,filePath.format(hdpi,fileName))
+	print("Completed")
+	print("------------------------------------")
 
 
 def resize(percent,image,filePath):
 	width = int(float(image.size[0])*percent)
-	print(width)
 	height = int((float(image.size[1])*float(percent)))
-	print(height)
+	print('Creating image with dimension {}x{}...'.format(width,height))
 	newimage = image.resize((width,height), Image.ANTIALIAS)
 	newimage.save(filePath)
 
@@ -47,9 +48,6 @@ def createFolder(folderName):
 		os.makedirs(folderName)
 
 process()
-
-
-
 
 
 
