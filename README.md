@@ -11,3 +11,7 @@ Note:Required to install Python Image Library
 
 pip install pillow
 
+File Uploader
+Uploadfile.py requires pydrive
+pip install pydrive
+
