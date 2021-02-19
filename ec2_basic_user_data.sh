@@ -6,6 +6,7 @@
 
 
 # get admin privelages
+sudo su
 
 # install httpd (Linux 2 version)
 yum update -y
